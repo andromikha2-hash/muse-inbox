@@ -26,3 +26,4 @@ below it. See `.claude/skills/memory/SKILL.md` for the rules.
 ## Index
 
 - [Link to detail files, e.g. `docs/architecture.md`, `notes/decisions.md`]
+- `experience.md` — per-job log (what broke, fix, evidence); newest 20 entries. Procedure in `.claude/skills/memory/SKILL.md`.

@@ -82,6 +82,9 @@ e.g. "ship it" / "merge it" / "use it in the next build"]**.
    `.claude/skills/memory/SKILL.md`: check any new note against the
    transcript/logs, correct what is wrong, prune what is stale, and write
    only salient, tested rules to `MEMORY.md`.
+6. Experience log: before the job, read the last five entries in
+   `omega/experience.md`. After verification, write one entry using its
+   template. Keep at most 20 entries. Untested until a real job runs.
 
 ## Output format
 

@@ -78,3 +78,18 @@ scored 87% vs 73% for search alone. It does not help when the answer is
 retrievable from a single document by text search. And a wiki can grow
 larger than the documents themselves, abstracting nothing — prune it
 when it does.
+
+## Experience log (`omega/experience.md`)
+
+Per-job lessons with evidence live in `experience.md`, not in `MEMORY.md`.
+Memory holds tested rules; the log holds what broke, what fixed it, and
+the evidence. Procedure (untested end to end; see the log's first entry):
+
+1. Before a job, read the last five entries in `experience.md` for traps.
+2. After the verification loop, the boss writes one entry using the
+   template in that file (job, what broke, what fixed it, evidence, date).
+3. Cap at 20 entries. Summarise older entries into `MEMORY.md` as tested
+   rules, or drop them. Never push `MEMORY.md` past 200 lines / 25KB.
+
+This idea is borrowed from Harness² (arXiv:2610.14224, gains unreplicated
+[UNVERIFIED]). Harness² itself is not installed and does not run on Claude Code.
