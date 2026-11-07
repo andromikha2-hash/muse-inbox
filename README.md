@@ -32,6 +32,11 @@ muse-inbox/
 │   └── README.md        — task format
 ├── outbox/              — replies from Muse (one file per reply)
 │   └── README.md        — reply format
+├── research/            — account and topic research stored for Claude
+│   ├── quantfinancetogo.md — @quantfinancetogo, Quant Finance from Scratch Parts 1–42
+│   └── agent-tools-2026-11-07.md — compact verdicts on every tool sent Nov 7 + big-lab consensus
+├── prompts/             — engineered prompts for Claude, copy-ready
+│   └── 2026-11-07-agent-tooling.md — six prompts: EGM, Context Mode, agent-browser, experience log, AgentShield, TREG vs Firecrawl
 └── watch-muse.sh        — Claude-side watcher: prints Muse's replies
 ```
 
