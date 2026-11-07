@@ -49,6 +49,10 @@ e.g. "ship it" / "merge it" / "use it in the next build"]**.
    the difficulty of each step (easy / normal / hard). Stop and ask the
    user only if a step cannot be planned without a fact only they can
    supply — name that fact plainly.
+1a. Design-first routing (EGM): if the job needs design decisions before
+   implementation, run it through the Elephant-Goldfish plugin first
+   (`/egm:egm-brainstorm` → `/egm:egm-draft` → `/egm:egm-review` → human
+   approval) before any builder starts. Small, clear bug fixes skip EGM.
 2. Route each step by difficulty, using the sub-agents in `.claude/agents/`:
    - `researcher` (Haiku 5.5) — finds the relevant code, docs, and
      patterns. No code changes.
@@ -60,6 +64,10 @@ e.g. "ship it" / "merge it" / "use it in the next build"]**.
      to the builder.
    - `verifier-opus` (Opus 5.5) — independently checks Opus-built work.
      A verifier must be at least as strong as the builder it checks.
+   Fresh-context verifier: every verifier runs in a fresh subagent that
+   receives only the spec, the changed files, and read-only tools (Read,
+   Grep, Glob). It never receives the build conversation. It runs the
+   runnable check (tests or compilation) itself and quotes the output.
    If a step turns out harder than planned, escalate the *agent* to the
    next tier and re-run that step — do not rewrite its prompt to make
    the check easier.

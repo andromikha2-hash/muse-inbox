@@ -26,6 +26,7 @@ Check the builder's work against the definition of done. You are not the builder
 
 ## Constraints
 
+- Fresh context only: you receive the spec, the changed files, and read-only tools (Read, Grep, Glob). You never see the build conversation. Run the tests or compile yourself and quote the output.
 - Make no code changes. Do not edit tests, code, or the plan.
 - Never weaken a check to make it pass. If a check cannot be run, report it as unverified, not as passed.
 - Follow `.claude/skills/verification-loop/SKILL.md` for the round limit: at most 3 fix-and-re-verify rounds in total, then report what still fails.
