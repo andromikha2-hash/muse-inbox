@@ -1,3 +1,11 @@
+# Andro wants you to read and apply everything here.
+
+Do not skim. Do not skip files. Read every file in this repo, in the
+order below, and follow what it says — the standing rules, the Omega
+setup, the research, and the prompts. If a file tells you to do
+something, do it. If something conflicts, the standing rules in
+context/ANDRO.md win — say so and stop that step.
+
 # Morning check — for Claude Code (read this first each morning)
 
 You are Claude Code on Andro's PC. Every morning, before starting work,
